@@ -13,6 +13,33 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <main className="min-h-screen pb-10 text-primary-6">
+        <section className="flex min-h-screen gap-4 p-10">
+          <article className="flex w-1/2 flex-col items-center justify-center gap-4">
+            <h1 className="text-center text-2xl font-bold">
+              Generate Cool Icons With The Power Of AI!
+            </h1>
+            <p className="text-center">
+              Join the AI art revolution today and unleash your creativity with
+              our app. Get started now and create stunning icons with just a few
+              clicks!
+            </p>
+            <Link href="/generate" className="bg-primary-3 pl-2 pr-2 pt-1 pb-1">
+              Generate
+            </Link>
+          </article>
+          <img
+            src="https://img.freepik.com/free-vector/social-media-icons-vector-set-with-facebook-instagram-twitter-tiktok-youtube-logos_53876-126273.jpg"
+            alt="icons image"
+            className="w-1/2 object-contain"
+          />
+        </section>
+        <section className="min-h-screen">Stuff Here</section>
+        <section className="min-h-screen">Stuff Here</section>
+      </main>
+      <footer className="h-20 bg-primary-2 text-primary-6">
+        This is a footer
+      </footer>
     </>
   );
 };

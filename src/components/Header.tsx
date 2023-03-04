@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between border-b bg-primary-1 p-6 font-bold text-primary-6">
+    <header className="flex items-center justify-between border-b bg-primary-2 p-6 font-bold text-primary-6">
       <Link href="/">
         <h1>ICON APP</h1>
       </Link>

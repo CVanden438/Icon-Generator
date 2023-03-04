@@ -20,7 +20,7 @@ const Generate = () => {
   const [style, setStyle] = useState<string>("");
   const [shape, setshape] = useState<string>("");
   const [amount, setAmount] = useState<number>(1);
-  const handleOptionsChange = () => {};
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log({ prompt, selectedColour, style, shape, amount });
@@ -33,7 +33,7 @@ const Generate = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="m-auto min-h-screen w-3/5 bg-primary-1 text-primary-6">
+      <main className="m-auto min-h-screen w-3/5 bg-primary-1 pb-10 text-primary-6">
         <h1 className="mb-10 mt-10 text-center text-3xl font-bold">
           Fill Out The Form To Generate Your Icon!
         </h1>
