@@ -4,6 +4,29 @@ import Link from "next/link";
 import Header from "~/components/Header";
 import { api } from "~/utils/api";
 
+//Present
+//Affordable
+//Manage Icons
+//High Resolution
+const Icon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="h-10 w-10"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+  );
+};
+
 const Home: NextPage = () => {
   return (
     <>
@@ -14,12 +37,13 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main className="min-h-screen pb-10 text-primary-6">
+        {/* Hero Section */}
         <section className="flex min-h-screen gap-4 p-10">
           <article className="flex w-1/2 flex-col items-center justify-center gap-4">
-            <h1 className="text-center text-2xl font-bold">
+            <h1 className="text-center text-5xl font-bold">
               Generate Cool Icons With The Power Of AI!
             </h1>
-            <p className="text-center">
+            <p className="text-center text-xl">
               Join the AI art revolution today and unleash your creativity with
               our app. Get started now and create stunning icons with just a few
               clicks!
@@ -34,13 +58,43 @@ const Home: NextPage = () => {
             className="w-1/2 object-contain"
           />
         </section>
-        <section className="min-h-screen">Stuff Here</section>
-        <section className="min-h-screen">Stuff Here</section>
+        {/* Info Section */}
+        <section className="p-10">
+          <h1 className="mb-10 text-center text-5xl font-bold">Benefits</h1>
+          <div className="grid min-h-screen grid-cols-2 justify-items-center">
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+          </div>
+        </section>
+        <section className="min-h-screen">
+          <h1 className="text-center text-2xl font-bold">Testemonials</h1>
+        </section>
+        {/* Testemonial Section */}
       </main>
       <footer className="h-20 bg-primary-2 text-primary-6">
         This is a footer
       </footer>
     </>
+  );
+};
+
+const InfoCard = () => {
+  return (
+    <article className="relative w-3/4 pl-12">
+      <div className="absolute top-0 left-0">
+        <Icon />
+      </div>
+      <h2 className="mb-2 text-4xl font-bold">Quick Feedback Loop</h2>
+      <p className="text-xl">
+        Our icons will generate within a few seconds so you can continously
+        fine-tune your prompt and icon options to find the icon that works best
+        for you.
+      </p>
+    </article>
   );
 };
 
